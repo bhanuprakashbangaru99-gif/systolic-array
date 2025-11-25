@@ -1,0 +1,7 @@
+1. systolic array: Ensure weight preloading occurs in a separate FSM state before computation begins.
+
+2. systolic array: For consecutive multiplications, use double-buffering so the next B matrix loads while computing the current multiplication.
+
+3. systolic array: The controller FSM should explicitly generate a buffer-switch signal only after the next B matrix has been fully loaded.
+
+4. systolic array: out_valid must only assert when all four C matrix outputs have completed their accumulation after the compute phase.
