@@ -1,3 +1,5 @@
+// GOLDEN VERSION PLACEHOLDER
+
 module systolic (
     input  logic       clk,
     input  logic       rst_n,
